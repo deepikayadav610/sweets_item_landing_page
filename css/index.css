@@ -1,0 +1,238 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f9fa;
+    text-align: center;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 15px 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+body {
+    padding-top: 70px;
+}
+
+/* Logo */
+.logo {
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+}
+
+.logo span {
+    color: brown;
+}
+
+/* Navigation Menu */
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: brown;
+}
+
+/* Cart Button */
+.menu .cart {
+    background: gold;
+    color: darkcyan;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* Header */
+header {
+    background: url("/img/background-img.jpg") center/cover no-repeat;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    color: #000;
+}
+
+/* Hero Text Box */
+.text-1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.85);
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+}
+
+/* Hero Section Text */
+.text-1 h1 span {
+    color: brown;
+}
+
+/* Buttons */
+#order,
+#discount {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 8px;
+    transition: transform 0.2s ease-in-out;
+}
+
+#order {
+    background: brown;
+}
+
+#discount {
+    background: black;
+}
+
+#order:hover,
+#discount:hover {
+    transform: scale(1.1);
+}
+
+/* Gallery */
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 30px 0;
+}
+
+.gallery img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: translateY(-10px);
+}
+
+/* Items Section */
+.items {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+.item {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    width: 280px;
+}
+
+.item img {
+    width: 100%;
+    height: 190px;
+    border-radius: 8px;
+}
+
+.item a {
+    display: block;
+    text-decoration: none;
+    color: crimson;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.item:hover {
+    transform: scale(1.05);
+}
+
+/* Quote Section */
+.quote {
+    font-size: 1.2em;
+    background: white;
+    padding: 20px;
+    font-weight: bold;
+}
+
+/* Contact Form */
+.contact {
+    background: white;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 10px;
+}
+
+.contact input,
+.contact textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 2px solid red;
+    border-radius: 5px;
+}
+
+.contact input[type="submit"] {
+    background: red;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.contact input[type="submit"]:hover {
+    background: darkred;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .text-1 {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item {
+        width: 90%;
+    }
+}
