@@ -12,10 +12,10 @@ nav {
     left: 0;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background: rgba(255, 255, 255, 0.95);
-    padding: 15px 50px;
+    padding: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1000;
 }
