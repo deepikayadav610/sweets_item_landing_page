@@ -64,7 +64,7 @@ body {
 
 /* Header */
 header {
-    background: url("./img/background-img.jpg") center/cover no-repeat;
+    background: url("/sweets_item_landing_page/img/background-img.jpg") center/cover no-repeat;
     height: 550px;
     display: flex;
     flex-direction: column;
